@@ -1,4 +1,5 @@
 ActiveAdmin.register Hashtag do
+  permit_params :hashtag
 
 
   # See permitted parameters documentation:
