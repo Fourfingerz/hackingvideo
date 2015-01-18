@@ -1,7 +1,7 @@
 <h1><%= @article.title %></h1>
 <h3>by <%= @article.author %></h3>
-<p><%= @article.content %></p>
 <img src=<%= @article.picture_url %> class="img-thumbnail">
+<p><%= @article.content %></p>
 </br>
 </br>
 <% @article.hashtags.each do |hashtag| %>
