@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :title, :author, :content, :picture_url, :picture_caption
+  permit_params :title, :author, :content, :picture_url, :picture_caption, :issue_id
 
 
   # See permitted parameters documentation:
