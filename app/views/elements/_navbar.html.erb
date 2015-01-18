@@ -20,11 +20,25 @@
                   <%= link_to '/Full Sight:', :root %>
                 </li>
 
-                <% Issue.all.each do |c| %>
-                    <li class="snavitem <%= is_active?(issue_path(c)) %>">
-                    <%= link_to "" + c.topic, issue_path(c) %>
-                  <% end %>
-                    </li>
+                <li id="news">
+                  <%= link_to 'News', '/articles/news.html' %>
+                </li>
+
+                <li id="union">
+                  <%= link_to 'State Of the Union', '/articles/union.html' %>
+                </li>
+
+                <li id="cooking">
+                  <%= link_to 'Cooking', '/articles/cooking.html' %>
+                </li>
+
+                <li id="longform">
+                  <%= link_to 'Long-Form', '/articles/longform.html' %>
+                </li>
+
+                <li id="sports">
+                  <%= link_to 'Sports', '/articles/sports.html' %>
+                </li>
                     
             </ul>
            </div>

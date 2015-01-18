@@ -4,6 +4,13 @@ Rails.application.routes.draw do
 
   root             'home#landing'
   get 'issues/:id' => 'issues#index'
+
+  get 'articles/news' => 'articles#news'
+  get 'articles/cooking' => 'articles#cooking'
+  get 'articles/longform' => 'articles#longform'
+  get 'articles/sports' => 'articles#sports'
+  get 'articles/union' => 'articles#union'
+  
   get 'articles/:id' => 'articles#show', :as => :article
   resources :issues
 

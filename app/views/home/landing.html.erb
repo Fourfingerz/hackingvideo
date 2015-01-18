@@ -1,16 +1,4 @@
 <div id="jumbotron" class="jumbotron">
-
 </div>
 
-<ul>
-<% @recent_articles.order(:updated_at).each do |article| %>
-	<h2><%= link_to article.title, article %></h2>
-	<h3>by <%= article.author %></h3>
-	<img src=<%= article.picture_url %> class="img-thumbnail">
-	<p><%= truncate(article.content, length: 700) %></p>
-	
-	</br>
-	</br>
-	<% end %>
-</ul>
 
