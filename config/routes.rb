@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root             'home#landing'
-  get 'index'   => 'issues#index'
+  get 'issues/:id' => 'issues#index'
+
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.

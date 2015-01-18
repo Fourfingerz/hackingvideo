@@ -1,1 +1,11 @@
-<h1> This is the Index View for Issues </h1>
+<h1> This is the Index View for <%= @issue.topic %> News</h1>
+
+
+<ul>
+<%= @issue.articles.order(:created_at).each do |article| %>
+	<h4><%= article.title %></h4>
+	<h4>by <%= article.author %></h4>
+	<h4><%= article.content %></h4>
+	<h4><%= article.picture_url %></h4>
+	<% end %>
+</ul>
