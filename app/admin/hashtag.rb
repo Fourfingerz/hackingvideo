@@ -1,5 +1,5 @@
 ActiveAdmin.register Hashtag do
-  permit_params :hashtag
+  permit_params :content, :article_id, :name
 
 
   # See permitted parameters documentation:

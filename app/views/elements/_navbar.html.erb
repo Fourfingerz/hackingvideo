@@ -1,0 +1,38 @@
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,500' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="/navbar.css">
+</head> 
+
+<body>
+  <header>
+    <div id="navbar" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-left" id="navbar_items">
+
+                <li id="navlogo">
+                  <%= link_to '/VideoHack:', :root %>
+                </li>
+
+                <% Issue.all.each do |c| %>
+                    <li class="snavitem <%= is_active?(issue_path(c)) %>">
+                    <%= link_to "" + c.topic, issue_path(c) %>
+                  <% end %>
+                    </li>
+                    
+            </ul>
+           </div>
+            
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+</body>

@@ -6,7 +6,7 @@
 	<h2><%= link_to article.title, article %></h4>
 	<h4>by <%= article.author %></h4>
 	<h4><%= article.content %></h4>
-	<h4><%= article.picture_url %></h4>
+	<img src=<%= article.picture_url %> class="img-thumbnail">
 	</br>
 	</br>
 	<% end %>
