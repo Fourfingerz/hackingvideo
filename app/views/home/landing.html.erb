@@ -1,7 +1,7 @@
 <h1> This Is The Home Of The Video Journalism Hack </h1>
 
 <ul>
-<%= @recent_articles.order(:updated_at).each do |article| %>
+<% @recent_articles.order(:updated_at).each do |article| %>
 	<h2><%= link_to article.title, article %></h2>
 	<h3>by <%= article.author %></h3>
 	<p><%= truncate(article.content, length: 700) %></p>

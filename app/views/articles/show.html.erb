@@ -6,6 +6,6 @@
 <img src=<%= @article.picture_url %> class="img-thumbnail">
 </br>
 </br>
-<%= @article.hashtags.each do |hashtag| %>
+<% @article.hashtags.each do |hashtag| %>
 	<h3><%= hashtag.name %></h3>
 	<% end %>
