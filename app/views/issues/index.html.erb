@@ -3,9 +3,11 @@
 
 <ul>
 <%= @issue.articles.order(:created_at).each do |article| %>
-	<h4><%= article.title %></h4>
+	<h2><%= article.title %></h4>
 	<h4>by <%= article.author %></h4>
 	<h4><%= article.content %></h4>
 	<h4><%= article.picture_url %></h4>
+	</br>
+	</br>
 	<% end %>
 </ul>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root             'home#landing'
   get 'issues/:id' => 'issues#index'
+  get 'articles/:id' => 'articles#show', :as => :article
 
 
 
