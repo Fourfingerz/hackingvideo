@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use postgresql as the database for Active Record
-gem 'pg'
+#gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -56,4 +56,9 @@ gem 'tzinfo-data'
 
 group :development do
   gem 'better_errors'
+end
+
+group :production do
+  gem 'pg'            
+  gem 'rails_12factor'
 end
