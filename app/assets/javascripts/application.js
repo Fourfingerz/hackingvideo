@@ -14,5 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= popcorn-complete 
 
 //= require_tree .
+

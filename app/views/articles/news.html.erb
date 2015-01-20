@@ -1,9 +1,61 @@
-<h1>NEWS</h1>
+<head>
+    <title>Hacking Video-Ferguson</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />       
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="shortcut icon" href="http://media.npr.org/favicon.ico" /> -->
+</head>
 
-<section class="article">
+<body>
+    <!-- This section includes the main article -->
+    <nav>
+        <div class="logo">
+            <!-- <img class = 'logoImage' src="assets/images/logo.png" alt=""> -->
+            <img class= 'logoImage' src="<%= asset_path 'logo.png' %>" alt="">
+        </div><!-- /.logo -->
+
+        <!-- <div class="corner"> -->
+            <!-- <p class="autoplay">video autoplay</p> -->
+
+            <!-- On/ off switch -->
+<!--             <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <button class="onoffswitch-switch"></button>
+                </label>
+            </div> -->
+    </nav>
+
+    <aside clearfix>
+        <p>#ferguson</p>
+        <p>#protest</p>
+        <p>#michaelbrown</p>
+    </aside> 
+
+    <span id="videoIcon"></span>
+    <span id="crossIcon"></span>
+
+
+    <div id="ourvideo"></div>
+
+    <section class="article">
         <h1>Chronicle of a Riot Foretold</h1>
         <p class="byline">by Jelani Cobb</p>
-        <p>FERGUSON, Missouri—For a hundred and eight days, through the suffocating heat that turned the city into a kiln, through summer thunderstorms and the onset of an early winter, through bureaucratic callousness and the barbs of cynics who held that the effort was of no use and the prickly fear that they might be right, a community in Ferguson, Missouri, held vigil nightly, driven by the need to validate a simple principle: black lives matter. On November 24, 2014, we learned that they do indeed matter, just less than others—less than the prerogatives of those who wield power here, less than even the cynics may have suspected.</p>
+        <p>FERGUSON, Missouri—For a hundred and eight days, through the suffocating heat that turned the city into a kiln, through summer thunderstorms and the onset of an early winter, through bureaucratic callousness and the barbs of cynics who held that the effort was of no use and the prickly fear that they might be right, a community in Ferguson, Missouri, held vigil nightly, driven by the need to validate a simple principle: black lives matter. On November 24, 2014, we learned that they do indeed matter, just less than others—less than the prerogatives of those who wield power here, less than even the cynics may have suspected.</p>
 
-	<p><span id = "test1" class="highlight">Last night, the streets of Ferguson were congested with smoke and anger and disillusionment and disbelief</span>, and also with batons and the malevolent percussion of gunfire and the hundreds of uniformed men brought here to marshal and display force. Just after eight on Monday evening, after a rambling dissertation from the St. Louis County Prosecutor, Robert McCulloch, that placed blame for tensions on social media and the twenty-four-hour news cycle, and ended with the announcement that the police officer Darren Wilson would not be indicted for shooting Michael Brown six times, the crowd that gathered in front of the police headquarters, on South Florissant Road, began to swell.</p>
-</section>
+    <p><span id = "test1" class="highlight"><img src="<%= asset_path 'video-alt.png' %>" class='smallIcon'>Last night, the streets of Ferguson were congested with smoke and anger and disillusionment and disbelief</span>, and also with batons and the malevolent percussion of gunfire and the hundreds of uniformed men brought here to marshal and display force. Just after eight on Monday evening, after a rambling dissertation from the St. Louis County Prosecutor, Robert McCulloch, that placed blame for tensions on social media and the twenty-four-hour news cycle, and ended with the announcement that the police officer Darren Wilson would not be indicted for shooting Michael Brown six times, the crowd that gathered in front of the police headquarters, on South Florissant Road, began to swell.</p>
+        <!-- <summary>Caption goes here</summary> -->
+    </section>
+
+
+    <!-- This is where the magic happens -->
+    <link href='assets/stylesheets/article.css' rel='stylesheet' type='text/css'>
+        <!-- <script src="http://use.typekit.net/nig8pij.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> 
+        <script src="http://cdn.popcornjs.org/code/dist/popcorn-complete.js"></script> -->
+        <script async type="text/javascript" src="assets/javascripts/scripts.js" type='text/javascript'></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+    </body>
+    </html>
