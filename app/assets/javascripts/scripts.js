@@ -7,6 +7,7 @@ var toggle = false;
 var progressPercentage;
 var currentTime;
 var videoLength;
+var vidSource = gon.vidlink
 // On page load nav bar drops down to reveal itself
 $("nav").slideDown("slow", function(){
    	 // Animation complete
@@ -42,7 +43,7 @@ $("#test1").click(function(){
 });
 	
 var wrapper = Popcorn.HTMLYouTubeVideoElement( "#ourvideo" );
- wrapper.src = "http://youtu.be/rOlMem0ykb4?t=12s"; // ferguson
+ wrapper.src = vidSource ; // ferguson
 // wrapper.src = "http://youtu.be/JEHm-XUHwNw"; // space
 // wrapper.src = "http://youtu.be/8s3fEUuqP94"; // cooking
 // wrapper.src = "http://youtu.be/5veKJJ4gnlk?t=3s"; // soccer
