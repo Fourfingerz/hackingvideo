@@ -24,6 +24,7 @@ $(".onoffswitch-switch").click(function(){
 });
 
 // When the user clicks on a piece of text, a video using Popcorn will fadeIn
+// ACTION STARTS HERE
 
 $("#test1").click(function(){
 	console.log(isPlaying)
@@ -35,7 +36,7 @@ $("#test1").click(function(){
 	} else {
 		fadeOut();
 		isPlaying = false;
-
+		this.reset();
 	}
 });
 	
@@ -89,14 +90,14 @@ var pop = Popcorn( wrapper );
 		videoLength = pop.duration();
 		pop.on('timeupdate', function( e ) {
 			currentTime = pop.currentTime();
-			progressPercentage = (currentTime/videoLength)*100;
+			progressPercentage = (currentTime/videoLength) * 110;
 
 			$('#test1').css({
 	            'background' : '-webkit-linear-gradient(left,  rgba(116, 192, 140, 1) ' + progressPercentage + '%,  rgba(116, 192, 140, 0.4)' + (progressPercentage ) + '%)',
                 'background' : 'linear-gradient(to right,  rgba(116, 192, 140, 1) ' + progressPercentage + '%,  rgba(116, 192, 140, 0.4)' + (progressPercentage ) + '%)'
 
 			})
-			if (progressPercentage > 60) {
+			if (progressPercentage > 100) {
 				fadeOut();
 	
 			}
