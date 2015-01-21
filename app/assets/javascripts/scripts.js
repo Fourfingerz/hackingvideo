@@ -29,6 +29,7 @@ $(".onoffswitch-switch").click(function(){
 $("#test1").click(function(){
 	console.log(isPlaying)
 	if (isPlaying == false) {
+
 		fadeIn();
 		isPlaying = true;
 
@@ -36,7 +37,7 @@ $("#test1").click(function(){
 	} else {
 		fadeOut();
 		isPlaying = false;
-		this.reset();
+		this.unload();
 	}
 });
 	
@@ -47,6 +48,7 @@ var wrapper = Popcorn.HTMLYouTubeVideoElement( "#ourvideo" );
 // wrapper.src = "http://youtu.be/5veKJJ4gnlk?t=3s"; // soccer
 // wrapper.src = "https://www.youtube.com/watch?v=8WxWFDmYrWo#t=24"; // surgery
 var pop = Popcorn( wrapper );
+
 	// var pop = Popcorn( "#ourvideo" );
 	
 
