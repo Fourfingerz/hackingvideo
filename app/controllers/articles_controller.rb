@@ -12,6 +12,8 @@ class ArticlesController < ApplicationController
 	def news
 		@vidlink = "http://youtu.be/rOlMem0ykb4?t=12s"
 		gon.vidlink = @vidlink
+		@vidlink2 = "http://youtu.be/8s3fEUuqP94"
+		gon.vidlink2 = @vidlink2
 	end
 
 	def sports

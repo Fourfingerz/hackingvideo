@@ -7,7 +7,16 @@ var toggle = false;
 var progressPercentage;
 var currentTime;
 var videoLength;
-var vidSource = gon.vidlink
+var wrapper = Popcorn.HTMLYouTubeVideoElement( "#ourvideo" );
+// wrapper.src = vidSource;
+
+
+// wrapper.src = "http://youtu.be/JEHm-XUHwNw"; // space
+// wrapper.src = "http://youtu.be/8s3fEUuqP94"; // cooking
+// wrapper.src = "http://youtu.be/5veKJJ4gnlk?t=3s"; // soccer
+// wrapper.src = "https://www.youtube.com/watch?v=8WxWFDmYrWo#t=24"; // surgery
+// var pop = Popcorn( "#ourvideo" );
+
 // On page load nav bar drops down to reveal itself
 $("nav").slideDown("slow", function(){
    	 // Animation complete
@@ -26,32 +35,32 @@ $(".onoffswitch-switch").click(function(){
 
 // When the user clicks on a piece of text, a video using Popcorn will fadeIn
 // ACTION STARTS HERE
-
-$("#test1").click(function(){
-	console.log(isPlaying)
-	if (isPlaying == false) {
-
-		fadeIn();
-		isPlaying = true;
-
-// Otherwise the video will fadeOut
-	} else {
-		fadeOut();
-		isPlaying = false;
-		this.unload();
-	}
-});
 	
-var wrapper = Popcorn.HTMLYouTubeVideoElement( "#ourvideo" );
- wrapper.src = vidSource ; // ferguson
-// wrapper.src = "http://youtu.be/JEHm-XUHwNw"; // space
-// wrapper.src = "http://youtu.be/8s3fEUuqP94"; // cooking
-// wrapper.src = "http://youtu.be/5veKJJ4gnlk?t=3s"; // soccer
-// wrapper.src = "https://www.youtube.com/watch?v=8WxWFDmYrWo#t=24"; // surgery
-var pop = Popcorn( wrapper );
+	$("#test1").click(function() {
+	wrapper.src = "http://youtu.be/rOlMem0ykb4?t=12s";
+	playVid();
+	});
 
-	// var pop = Popcorn( "#ourvideo" );
-	
+	$("#test2").click(function() {
+	wrapper.src = "http://youtu.be/8s3fEUuqP94";
+	playVid();
+	});
+
+	var pop = Popcorn( wrapper );
+
+	function playVid() {
+		console.log(isPlaying)
+		if (isPlaying == false) {
+			fadeIn();
+			isPlaying = true;
+
+	// Otherwise the video will fadeOut
+		} else {
+			fadeOut();
+			isPlaying = false;
+			this.unload();
+		}
+	};
 
 
 	function fadeIn() {
