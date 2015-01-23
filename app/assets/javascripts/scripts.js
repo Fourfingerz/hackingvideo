@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ $(document).ready(function(){
 // document.addEventListener( "DOMContentLoaded", function() {
 
 var isPlaying = false;
@@ -8,6 +8,7 @@ var progressPercentage;
 var currentTime;
 var videoLength;
 var wrapper = Popcorn.HTMLYouTubeVideoElement( "#ourvideo" );
+var cssSource;
 // wrapper.src = vidSource;
 
 
@@ -34,21 +35,31 @@ $(".onoffswitch-switch").click(function(){
 });
 
 // When the user clicks on a piece of text, a video using Popcorn will fadeIn
+// Video Source URLs are declared here
 // ACTION STARTS HERE
+
 	
 	$("#test1").click(function() {
 	wrapper.src = "http://youtu.be/rOlMem0ykb4?t=12s";
-	playVid();
+	cssSource = '#test1'
+	playButton();
 	});
 
 	$("#test2").click(function() {
 	wrapper.src = "http://youtu.be/8s3fEUuqP94";
-	playVid();
+	cssSource = '#test2'
+	playButton();
+	});
+
+	$("#test3").click(function() {
+	wrapper.src = "https://www.youtube.com/watch?v=8WxWFDmYrWo#t=24";
+	cssSource = '#test3'
+	playButton();
 	});
 
 	var pop = Popcorn( wrapper );
 
-	function playVid() {
+	function playButton() {
 		console.log(isPlaying)
 		if (isPlaying == false) {
 			fadeIn();
@@ -86,7 +97,7 @@ $(".onoffswitch-switch").click(function(){
 		$('h1').removeClass('darken');
 	    setTimeout(function(){
 			pop.pause();
-			$('#test1').css({
+			$(cssSource).css({
 	            'background' : '-webkit-linear-gradient(left,  rgba(116, 192, 140, 1) ' + 0 + '%,  rgba(116, 192, 140, 0.4)' + 0 + '%)',
 	            'background' : 'linear-gradient(to right,  rgba(116, 192, 140, 1) ' + 0 + '%,  rgba(116, 192, 140, 0.4)' + 0 + '%)'
 				})		
@@ -104,7 +115,7 @@ $(".onoffswitch-switch").click(function(){
 			currentTime = pop.currentTime();
 			progressPercentage = (currentTime/videoLength) * 110;
 
-			$('#test1').css({
+			$(cssSource).css({
 	            'background' : '-webkit-linear-gradient(left,  rgba(116, 192, 140, 1) ' + progressPercentage + '%,  rgba(116, 192, 140, 0.4)' + (progressPercentage ) + '%)',
                 'background' : 'linear-gradient(to right,  rgba(116, 192, 140, 1) ' + progressPercentage + '%,  rgba(116, 192, 140, 0.4)' + (progressPercentage ) + '%)'
 
@@ -148,7 +159,7 @@ $(".onoffswitch-switch").click(function(){
 
 // Give the user the ability to change the speed of the fadeIn
 
-// Give the user the ability to change the opacity of the video
+// PRIORITY :: Give the user the ability to change the opacity of the video
 
 // Give the user the ability to change the color of the highlight
 
