@@ -1,4 +1,98 @@
+
+<head>
+    <title>Hacking Video-Ferguson</title>
+    <%= include_gon %>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />       
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="shortcut icon" href="http://media.npr.org/favicon.ico" /> -->
+</head>
+
+<body>
+
+    <!-- This section includes the main article -->
+     <!-- <nav> -->
+        <!--
+        <div class="logo">
+            <img class = 'logoImage' src="assets/images/logo.png" alt=""> 
+            -->
+            <!--
+            <img class= 'logoImage' src="<%= asset_path 'logo.png' %>" alt="">
+            </div> 
+            -->
+            <!-- /.logo -->
+
+        <!-- <div class="corner"> -->
+            <!-- <p class="autoplay">video autoplay</p> -->
+
+            <!-- On/ off switch -->
+
+            <!--            
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <button class="onoffswitch-switch"></button>
+                </label>
+            </div> 
+            -->
+
+   <!-- </nav> -->
+
 <div id="jumbotron" class="jumbotron">
+	<h2>Video Without Containers</h2>
+	<h2>For Seamless Emotional Impact</h2>
 </div>
+
+<div id="ourvideo"></div>
+
+<section class="intro">
+		<h2>What is it?</h2>
+
+		<p class="intro">Fullsight.js is an inline media player that can greatly enhance the emotional impact of your content. It's a simple tool that allows journalists to use video as texture in their work. Highlighted text will subtlety fade in short video clips. Try a few examples below.
+</section>
+
+<section class="article">
+        <h1>Chronicle of a Riot Foretold</h1>
+        <p class="byline">by Jelani Cobb</p>
+        <p>FERGUSON, Missouri—For a hundred and eight days, through the suffocating heat that turned the city into a kiln, through summer thunderstorms and the onset of an early winter, through bureaucratic callousness and the barbs of cynics who held that the effort was of no use and the prickly fear that they might be right, a community in Ferguson, Missouri, held vigil nightly, driven by the need to validate a simple principle: black lives matter. </br>
+        <span id = "test1" class="highlight"><img src="<%= asset_path 'video-alt.png' %>" class='smallIcon'>Last night, the streets of Ferguson were congested with smoke and anger and disillusionment and disbelief</span>, and also with batons and the malevolent percussion of gunfire and the hundreds of uniformed men brought here to marshal and display force. </p>
+        <!-- <summary>Caption goes here</summary> -->
+</section>
+
+<section class="article">
+        <h1>Chocolate Cake Recipe</h1>
+        <p class="byline">Directions</p>
+        <p>1. Heat oven to 350°F. Grease and flour two 9-inch round baking pans.</p>
+
+	    <p>2.<span id = "test2" class="highlight"><img src="<%= asset_path 'video-alt.png' %>" class='smallIcon'>Stir together sugar, flour, cocoa, baking powder, baking soda and salt in large bowl.</span> Add eggs, milk, oil and vanilla; beat on medium speed of mixer 2 minutes. Stir in boiling water (batter will be thin). Pour batter into prepared pans.</p>
+
+	    <p>3. Bake 30 to 35 minutes or until wooden pick inserted in center comes out clean. Cool 10 minutes; remove from pans to wire racks. Cool completely. Frost with "PERFECTLY CHOCOLATE" CHOCOLATE FROSTING. Makes 12 servings.</p>
+</section>
+
+<section class="article">
+        <h1>This Old Man</h1>
+        <p class="byline">by Roger Angell</p>
+        <p>Like many men and women my age, <span id = "test3" class="highlight"><img src="<%= asset_path 'video-alt.png' %>" class='smallIcon'>I get around with a couple of arterial stents that keep my heart chunking.</span> I also sport a minute plastic seashell that clamps shut a congenital hole in my heart, discovered in my early eighties. The surgeon at Mass General who fixed up this PFO (a patent foramen ovale—I love to say it) was a Mexican-born character actor in beads and clogs, and a fervent admirer of Derek Jeter.</p>
+</section>
+
+<section class="About">
+		<p>
+		About Fullsight
+
+		Fullsight was conceived and coded over a weekend at the Hacking Journalism Hackathon hosted by Conde Nast at their headquarters in Downtown Manhattan on January 17-18, 2015. It was created by Doug Arellanes, acting as project director, Quoctrung Bui, Denny George, and Andrew Nguyen as front-end web engineers, Sze Chun Chan as back-end engineer, Valentine Sanders as UX designer, Morgan Witness and Daniel J Wilson as content curator.
+		</p>
+</section>
+
+    <!-- This is where the magic happens
+    <link href='assets/stylesheets/article.css' rel='stylesheet' type='text/css'>
+        <!-- <script src="http://use.typekit.net/nig8pij.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> 
+        <script src="http://cdn.popcornjs.org/code/dist/popcorn-complete.js"></script> 
+        <script async type="text/javascript" src="assets/javascripts/scripts.js" type='text/javascript'></script>
+        <script>try{Typekit.load();}catch(e){}</script> -->
+
+</body>
+
 
 
