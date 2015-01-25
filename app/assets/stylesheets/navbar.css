@@ -1,84 +1,13 @@
-html {
-	font-family: 'Titillium Web', Helvetica, sans-serif;
-}
-
-#navlogo {
-	font-size: 20px;
-	color: white;
-}
-
-#homebg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-	overflow: hidden;
-	display: inline;
-	height: auto;
-	width: 1400px;
-	background: black;
-}
-
-#homebg img {
-	margin-top: 92px;
-	position: relative;
-	top: -90;
-	left: 0;
-}
-
 #navbar {
 	opacity: .95;
 }
 
+#brand {
+	font-size: 24px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
 #navbar_items {
-	font-family: 'Titillium Web', Helvetica, sans-serif;
-	font-size: 15px;
-}
-
-#ct {
-	color: grey;
-	padding: 15px 15px;
-}
-
-#main_menu {
-	position: fixed;
-	width: 225px;
-	border: black solid 1px;
-	padding: 2px 0;
-	top: 30%;
-	right: 5%;
-	z-index: 100;
-	background: white;
-}
-
-#main_menu ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-#main_menu ul.main > li {
-	border-top: black solid 1px;
-	font-size: 15px;
-	font-weight: bold;
-}
-
-#main_menu ul.main > li:first-child {
-	border: none;
-}
-
-#main_menu ul.main > li:nth-of-type(9){
-	padding: 0 5px;
-	color: black;
-}
-
-#main_menu ul.main > li > a {
-	display: inline-block;
-	padding: 0 5px;
-	color: black;
-	text-decoration: none;
-	font-size: 15px;
-	font-weight: bold;
+	font-size: 14px;
 }

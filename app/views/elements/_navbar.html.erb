@@ -1,32 +1,36 @@
 <head>
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="/navbar.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  
 </head> 
 
 <body>
   <header>
     <div id="navbar" class="navbar navbar-inverse navbar-static-top">
-    <a class="brand" href="/">Full Sight</a>
+
+    
+
       <div class="container">
+
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
+        <a class="navbar-brand" id="brand" href="/">FULL SIGHT</a>
         <div class="collapse navbar-collapse navHeaderCollapse">
+
           <ul class="nav navbar-nav navbar-left" id="navbar_items">
           
                 <li id="news">
-                  <%= link_to 'News', '/articles/news.html' %>
+                  <%= link_to 'What is it?', '/articles/news.html' %>
                 </li>
 
                 <li id="cooking">
-                  <%= link_to 'Cooking', '/articles/cooking.html' %>
+                  <%= link_to 'Examples', '/articles/cooking.html' %>
                 </li>
 
                 <li id="longform">
-                  <%= link_to 'Long-Form', '/articles/longform.html' %>
+                  <%= link_to 'About Us', '/articles/longform.html' %>
                 </li>
                     
             </ul>

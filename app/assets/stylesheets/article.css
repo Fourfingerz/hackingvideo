@@ -559,4 +559,20 @@ ON/OFF BUTTON
   right: -4px;
 }
 
+/* Rails App Bootstrap styles */
+
+#jumbotron {
+  color: orange;
+  text-align: center;
+
+}
+
+#jumbotron > h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+#spacer {
+  padding: 125px;
+}
+
 /*# sourceMappingURL=style.css.map */
