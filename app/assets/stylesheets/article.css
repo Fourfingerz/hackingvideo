@@ -1,12 +1,11 @@
+
 /*----------------------------------
 NORMALIZE
 ----------------------------------*/
-
-/*
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
-*/
+
 
 audio, canvas, video {
   display: inline-block;
@@ -164,6 +163,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
 }
 
+
 /*----------------------------------
 BOX SIZING
 ----------------------------------*/
@@ -255,7 +255,6 @@ section {
 }
 
 a, a:link, a:visited {
-  color: #4774CC;
   text-decoration: none;
 }
 
@@ -564,18 +563,59 @@ ON/OFF BUTTON
 
 /* Rails App Bootstrap styles */
 
+/* Jumbo CSS */
 #jumbotron {
-  color: orange;
+  color: #FF0000;
   text-align: center;
 
 }
 
 #jumbotron > h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
 }
 
 #spacer {
   padding: 125px;
+}
+
+
+/* Examples CSS */
+.col-md-9 {
+  font-family: 'PT Serif', serif;
+}
+
+.col-md-9 > p {
+  font-size: 24px;
+}
+
+.col-md-9 > h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.col-md-3 > #thumbpix {
+  max-width: 250px;
+  vertical-align: middle;
+}
+
+
+/* Intro CSS */
+.col-md-12 > h1 {
+  font-size: 42px;
+
+}
+.col-md-12 > .intro {
+  font-size: 24px;
+  text-align: center;
+}
+
+.col-md-12 > #AboutTitle {
+  font-size: 42px;
+}
+
+.col-md-12 > #AboutEnd {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
