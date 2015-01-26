@@ -213,7 +213,7 @@ body {
 }
 
 h1 {
-  font-family: 'PT Serif', serif;  
+  font-family: 'Maven Pro', sans-serif;  
   margin: 0 0 6px 0;
   font-size: 40px;
   color: #000000;
@@ -263,7 +263,7 @@ a:hover, a:active {
 }
 
 p {
-  font-family: 'PT Serif', serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
   margin: 0px;
   padding-top: 40px;
@@ -327,7 +327,7 @@ button {
 }
 
 .byline {
-  font-family: 'PT Serif', serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
@@ -398,7 +398,7 @@ aside p {
 }
 
 summary {
-  font-family: 'PT Serif', serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -445,7 +445,7 @@ VIDEO VIEW
 
 .videoTitle,
 .videoByline {
-  font-family: 'PT Serif', serif;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
   font-size: 24px;
   padding: 2px;
@@ -565,24 +565,28 @@ ON/OFF BUTTON
 
 /* Jumbo CSS */
 #jumbotron {
-  color: #FF0000;
+  color: #FF6600;
   text-align: center;
 
 }
 
 #jumbotron > h2 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 42px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
 }
 
 #spacer {
-  padding: 125px;
+  padding: 120px;
+}
+
+#jumbobutton {
+  font-family: 'Maven Pro', sans-serif;
 }
 
 
 /* Examples CSS */
 .col-md-9 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .col-md-9 > p {
@@ -595,7 +599,7 @@ ON/OFF BUTTON
 }
 
 .col-md-3 > #thumbpix {
-  max-width: 250px;
+  max-width: 275px;
   vertical-align: middle;
 }
 
@@ -617,5 +621,26 @@ ON/OFF BUTTON
 .col-md-12 > #AboutEnd {
   font-size: 24px;
 }
+
+.bottom-row {
+  vertical-align: center;
+  text-align: center;
+}
+
+/* Footer CSS */
+.footer {
+  background: #292929;
+}
+
+.footer > .container > .bottom-row > .col-md-12 > h2 {
+  color: silver;
+  font-family: 'Oswald', sans-serif;
+}
+
+#foot > .row > .col-md-12 {
+  color: #FF6600;
+  font-family: 'Oswald', sans-serif;
+}
+
 
 /*# sourceMappingURL=style.css.map */
